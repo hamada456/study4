@@ -1,0 +1,16 @@
+.companyName {
+    color:blue;
+    text-decoration : underline;
+}
+
+.logo {
+    display:none;
+}
+
+.youtube {
+    display:none;
+}
+
+.abc {
+    display:block;
+}
