@@ -21,7 +21,9 @@ for(let ii = 0 ; ii < $logo.length ; ii++){
 //会社ロゴをクリックで別タブにyoutube動画を表示
 for(let iii = 0 ; iii < $logo.length ; iii++) {
     $logo[iii].addEventListener("click", () => {
-        window.alert("おすすめのゲームを紹介します。");
-        window.open("http://192.168.1.112/study/pageB.html?" + encodeURIComponent(iii));
+        let okNg = window.confirm( document.getElementById(iii).textContent + "のゲームの紹介ページを開きます。");
+            if(okNg){
+                window.open("http://192.168.1.112/study/pageB.html?" + encodeURIComponent(iii));
+            }
     });
 }
