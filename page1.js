@@ -18,17 +18,10 @@ for(let ii = 0 ; ii < document.getElementsByClassName("logo").length ; ii++){
 });
 }
 
-
-document.getElementsByClassName("logo")[0].addEventListener("click", () => {
-    window.alert("おすすめのゲームを紹介します。");
-    window.open("http://192.168.1.112/study/pageB.html?" + encodeURIComponent(0));
-});
-document.getElementsByClassName("logo")[1].addEventListener("click", () => {
-    window.alert("おすすめのゲームを紹介します。");
-    window.open("http://192.168.1.112/study/pageB.html?" + encodeURIComponent(1));
-});
-document.getElementsByClassName("logo")[2].addEventListener("click", () => {
-    window.alert("おすすめのゲームを紹介します。");
-    window.open("http://192.168.1.112/study/pageB.html?" + encodeURIComponent(2));
-});
-
+//会社ロゴをクリックで別タブにyoutube動画を表示
+for(let iii = 0 ; iii < document.getElementsByClassName("logo").length ; iii++) {
+    document.getElementsByClassName("logo")[iii].addEventListener("click", () => {
+        window.alert("おすすめのゲームを紹介します。");
+        window.open("http://192.168.1.112/study/pageB.html?" + encodeURIComponent(iii));
+    });
+}
